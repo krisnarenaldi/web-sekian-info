@@ -12,7 +12,7 @@ const Footer = () => {
                 </div>
                 <div className={styles.socialLinks}>
                     <a
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/krisna-renaldi-9b739b29/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.socialLink}
@@ -21,7 +21,7 @@ const Footer = () => {
                         <FaLinkedin size={20} />
                     </a>
                     <a
-                        href="https://twitter.com"
+                        href="https://twitter.com/krisnarenaldi"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.socialLink}
@@ -30,7 +30,7 @@ const Footer = () => {
                         <FaXTwitter size={20} />
                     </a>
                     <a
-                        href="https://github.com"
+                        href="https://github.com/krisnarenaldi"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.socialLink}
