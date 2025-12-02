@@ -1,0 +1,10 @@
+# robots.txt for Sekian Info
+
+User-agent: *
+Allow: /
+
+# Disallow admin or API routes if any
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://your-site.vercel.app/sitemap.xml
