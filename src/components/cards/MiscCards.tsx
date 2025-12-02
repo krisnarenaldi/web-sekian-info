@@ -76,6 +76,9 @@ export const AboutMeCard = ({ className }: { className?: string }) => {
       title={greeting}
       icon={<FaUser style={{ color: "#4A90E2" }} />}
       className={className}
+      style={{
+        background: "linear-gradient(to bottom, #eeecda, #f8f7ed)",
+      }}
     >
       <a
         href="https://saweria.co/papaloni"
