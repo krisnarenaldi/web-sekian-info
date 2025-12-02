@@ -45,7 +45,8 @@ const SembakoCard = ({ className }: { className?: string }) => {
         setLoading(true);
         setError(null);
 
-        const response = await fetch("http://localhost:5500/api/sembako");
+        const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5500';
+        const response = await fetch(`${apiBaseUrl}/api/sembako`);
 
         if (!response.ok) {
           throw new Error("Failed to fetch sembako data");

@@ -61,7 +61,8 @@ const FlightArrivalsCard = ({ className }: { className?: string }) => {
                 setLoading(true);
                 setError(null);
 
-                const response = await fetch("http://localhost:5500/api/flights/arrivals");
+                const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5500';
+                const response = await fetch(`${apiBaseUrl}/api/flights/arrivals`);
 
                 if (!response.ok) {
                     throw new Error("Failed to fetch flight data");

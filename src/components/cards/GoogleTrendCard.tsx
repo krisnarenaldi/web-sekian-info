@@ -26,7 +26,8 @@ const GoogleTrendCard = ({ className }: { className?: string }) => {
         setLoading(true);
         setError(null);
 
-        const response = await fetch("http://localhost:5500/api/google_trend");
+        const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5500';
+        const response = await fetch(`${apiBaseUrl}/api/google_trend`);
 
         if (!response.ok) {
           throw new Error("Failed to fetch Google Trend data");
