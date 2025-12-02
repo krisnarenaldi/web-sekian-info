@@ -129,7 +129,7 @@ export const AboutMeCard = ({ className }: { className?: string }) => {
             Hello, nice to meet you
           </div>
           <div style={{ fontSize: "0.8rem", color: "#666" }}>
-            If you like my work, contact me on{" "}
+            If you like my work, please contact me on{" "}
             <a
               href="https://www.linkedin.com/in/krisna-renaldi-9b739b29/"
               target="_blank"
